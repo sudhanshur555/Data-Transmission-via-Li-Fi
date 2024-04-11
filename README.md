@@ -28,7 +28,7 @@ The transmitter circuit consists of an Arduino Uno board with a white LED connec
 3. The LED is turned on and off rapidly to transmit each bit serially, with a small delay between bits to maintain the desired baud rate.
 4. A start bit (LED off) and a stop bit (LED on) are added to each transmitted byte for synchronization purposes.
 5. The entire text string is transmitted repeatedly in a loop.
-6. Baud Rate = 1 / (SAMPLING_TIME * 2) = 1 / (0.005 * 2) = 100 bits/second = 1200 baud.
+6. Baud Rate = 1 / (SAMPLING_TIME _ 2) = 1 / (0.005 _ 2) = 100 bits/second = 1200 baud.
 
 ### Receiver
 
@@ -59,6 +59,8 @@ Note: Ensure that the transmitter LED is adequately visible to the receiver sola
 - Ambient light interference: Ambient light sources (e.g., sunlight, fluorescent lamps) can introduce noise and potentially corrupt the received data.
 - Baud rate limitations: The achievable baud rate (data transmission speed) is constrained by the switching speed of the LED and the sampling rate of the receiver.
 - Unidirectional communication: The current implementation only supports one-way data transmission from the transmitter to the receiver.
+- Li-Fi communication relies on the direct line of sight between the transmitter (light source) and the receiver (photodetector). This
+  requirement restricts the flexibility of Li-Fi in scenarios where devices need to communicate without a direct line of sight.
 
 ## Future Improvements
 
@@ -72,14 +74,13 @@ Note: Ensure that the transmitter LED is adequately visible to the receiver sola
 
 ## Contributors
 
+- [Sudhanshu Ranjan](https://github.com/sudhanshur555)
 
- - [Sudhanshu Ranjan](https://github.com/sudhanshur555)
+- [Vinay Kumar](https://github.com/Kumarvinay710)
 
- - [Vinay Kumar](https://github.com/Kumarvinay710)
+- [Sarthak Kumar](https://github.com/sk20215089)
 
- - [Sarthak Kumar](https://github.com/sk20215089)
-
-  - [Ujjwal Kumar](https://github.com/ujjwal13818)
+- [Ujjwal Kumar](https://github.com/ujjwal13818)
 
 ## Credits
 
